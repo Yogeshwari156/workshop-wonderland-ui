@@ -1,4 +1,3 @@
-
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
@@ -13,6 +12,7 @@ const Header = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Workshops", path: "/workshops" },
+    { name: "My Bookings", path: "/my-bookings" },
     { name: "About", path: "/about" },
     { name: "Contact", path: "/contact" },
   ];
