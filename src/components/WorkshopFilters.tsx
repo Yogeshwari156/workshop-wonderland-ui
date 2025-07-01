@@ -74,7 +74,7 @@ const WorkshopFilters = ({ onFiltersChange }: WorkshopFiltersProps) => {
               <SelectValue placeholder="Select category" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">All Categories</SelectItem>
+              <SelectItem value="all">All Categories</SelectItem>
               <SelectItem value="design">Design</SelectItem>
               <SelectItem value="development">Development</SelectItem>
               <SelectItem value="business">Business</SelectItem>
@@ -96,7 +96,7 @@ const WorkshopFilters = ({ onFiltersChange }: WorkshopFiltersProps) => {
               <SelectValue placeholder="Select location" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">All Locations</SelectItem>
+              <SelectItem value="all">All Locations</SelectItem>
               <SelectItem value="online">Online</SelectItem>
               <SelectItem value="new-york">New York</SelectItem>
               <SelectItem value="san-francisco">San Francisco</SelectItem>
@@ -133,7 +133,7 @@ const WorkshopFilters = ({ onFiltersChange }: WorkshopFiltersProps) => {
               <SelectValue placeholder="Select timeframe" />
             </SelectTrigger>
             <SelectContent>
-              <SelectItem value="">Any time</SelectItem>
+              <SelectItem value="anytime">Any time</SelectItem>
               <SelectItem value="today">Today</SelectItem>
               <SelectItem value="this-week">This week</SelectItem>
               <SelectItem value="this-month">This month</SelectItem>

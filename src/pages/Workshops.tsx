@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -95,6 +94,7 @@ const Workshops = () => {
   ];
 
   const handleFiltersChange = (newFilters: any) => {
+    console.log("Filters changed:", newFilters);
     setFilters(newFilters);
   };
 
@@ -104,10 +104,10 @@ const Workshops = () => {
         !workshop.description.toLowerCase().includes(filters.search.toLowerCase())) {
       return false;
     }
-    if (filters.category && workshop.category.toLowerCase() !== filters.category) {
+    if (filters.category && filters.category !== "all" && workshop.category.toLowerCase() !== filters.category) {
       return false;
     }
-    if (filters.location && workshop.location.toLowerCase() !== filters.location) {
+    if (filters.location && filters.location !== "all" && workshop.location.toLowerCase() !== filters.location) {
       return false;
     }
     if (filters.priceRange && (workshop.price < filters.priceRange[0] || workshop.price > filters.priceRange[1])) {
